@@ -1,4 +1,4 @@
-from application import db
+from application import db 
 
 class Books(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -7,6 +7,6 @@ class Books(db.Model):
 
 class Review(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    desc = db.Column(db.String(500))
+    desc = db.Column(db.String(300))
     rating = db.Column(db.Integer)
-    books_id = db.Column(db.Integer, db.ForeignKey('books_id'))
+    books_id = db.Column(db.Integer, db.ForeignKey('books.id'))
