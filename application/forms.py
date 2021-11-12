@@ -25,7 +25,5 @@ class ReviewForm(FlaskForm):
     desc = StringField('Review',
 		validators=[
 			DataRequired()])
-    rating = SelectField('Ratings',
-		choices=[
-			('5', '5/5'),('4','4/5'),('3','3/5'),('2','2/5'),('1','1/5'), ('0','0/5')])
+    
     submit = SubmitField('Add Review')

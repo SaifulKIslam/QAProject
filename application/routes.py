@@ -43,7 +43,6 @@ def addReview(idNum):
     form = ReviewForm()
     if form.validate_on_submit():
         new_review = Review(desc=form.desc.data,
-			rating=form.rating.data,
 			books_id=idNum)
         db.session.add(new_review)
         db.session.commit()
@@ -52,5 +51,5 @@ def addReview(idNum):
 
 @app.route('/Reviewpage/<int:idNum>', methods=['GET','POST'])
 def Reviewpage(idNum):
-    review_page = Review.query.filter_by(s_id=idNum).all()
+    review_page = Review.query.filter_by(books_id=idNum).all()
     return render_template('Reviewpage.html', review_page=review_page)

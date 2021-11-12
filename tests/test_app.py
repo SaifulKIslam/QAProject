@@ -22,7 +22,7 @@ class TestBase(TestCase):
 
         #Create Test registree
         books = Books(name='Fantastic Mr Fox')
-        review = Review(desc='a great adventure and great read', rating='4/5')
+        review = Review(desc='a great adventure and great read')
         
         #Save Books & Review to the database
         db.session.add(books)
@@ -97,10 +97,9 @@ class TestAddreview(TestBase):
     def test_add_review(self):
         response = self.client.post(
 		url_for('addReview', idNum=1),
-		data = dict(desc='Great read', rating='4/5')
+		data = dict(desc='Great read')
 		)
         self.assertIn(b'Great read', response.data)
-        self.assertIn(b'5/5', response.data)
 
 #Test Reviewpage
 class TestReviewpage(TestBase):

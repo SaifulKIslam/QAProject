@@ -1,0 +1,26 @@
+<html>
+	<body style="background-image: linear(#ffffff);">
+	
+		<h1 style="
+
+text-transform: capitalize;
+margin-left: 10px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+position: relative;
+font-size: xxx-large;">Book Reviews!</h1>
+
+<h2 style="
+margin-left: 10px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+position: relative;"><a href='{{url_for('index')}}'>Home</a>  &nbsp;  <a href='{{url_for('add')}}'>Add a book</a>  
+				<br>
+			{% block body_content %}
+			{% endblock body_content%}
+	
+	</body>
+
+</html>
