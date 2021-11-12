@@ -1,6 +1,9 @@
 from flask_wtf import FlaskForm
+<<<<<<< HEAD
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired, ValidationError
+=======
+>>>>>>> a8d788763e5b27c53ac92b67ef25374aeae2912a
 
 from application.models import Books, Review 
 
