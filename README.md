@@ -26,20 +26,27 @@ This repositary contains my CRUD application for my QA devops fundamental projec
     - [Page: View Review](#virev)
 - [Future Improvements](#improve)
 
-<a name="breif"></a>
+<a name="brief"></a>
 ## Breif
-My project is to build an application where users can review books that thhey have read. Users will be able to:
--Create and add new books
--Delete exiting books
--Add reviews for books
--Update existing book titles
--Update existing reviews
+My project is to build an application where users can review books that they have read. 
+Users will be able to:
+*Create and add new books
+*Delete exiting books
+*Add reviews for books
+*Update existing book titles
+*Update existing reviews
 
 <a name="appdes"></a>
 ### Application Design
-Below is shown ERD table for the project. My project will be connected to a GCP hosted MySQL server which will store the Series and Review 
-details, allowing anyone to Create, Read, Update and Delete from the database. Relationship between tables is a one-to-many relationship as
-1 series can have many reviews and 1 review cannot have many series attached to it.
+The reviws and books data will be stored on an SQL server hosted on Google Cloud Platform (GCP).
+Users will be able to Create, Read, Update and Delete from the database via the application interface accordingly.
+
+<a name="erd"></a>
+    #### Entity Relationship Diagram
+    There will be two databases with a one-to-many realtionship.
+    * A Books database
+    * A Reviews database
+    The ERD below shows the relationship between the databases
 
 <a name="erd"></a>
     ### Entity Relationship Diagrams (ERD)
