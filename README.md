@@ -27,7 +27,7 @@ This repositary contains my CRUD application for my QA devops fundamental projec
 - [Future Improvements](#improve)
 
 <a name="brief"></a>
-## Breif
+## Project Brief
 My project is to build an application where users can review books that they have read. 
 Users will be able to:
 *Create and add new books
@@ -42,16 +42,15 @@ The reviws and books data will be stored on an SQL server hosted on Google Cloud
 Users will be able to Create, Read, Update and Delete from the database via the application interface accordingly.
 
 <a name="erd"></a>
-    #### Entity Relationship Diagram
-    There will be two databases with a one-to-many realtionship.
-    * A Books database
-    * A Reviews database
-    The ERD below shows the relationship between the databases
-
-<a name="erd"></a>
-    ### Entity Relationship Diagrams (ERD)
-    <img src="/Documentation/ERD-db.png" alt="ERD" width="100%" height="100%"/>
-    #### Plan
+#### Entity Relationship Diagram
+There will be two databases with a one-to-many realtionship.
+* A Books database
+* A Reviews database
+The ERD below shows the relationship between the databases.
+    <img src="/Documentation/ERD.png" alt="ERD" width="100%" height="100%"/>
+    
+    
+#### Plan
 
 The inital plan for the ERD was consistent throughout the projects lifecycle and the project was delievered with the ERD shown below. No 
 changes were needed to be made to the database as all functionalty requirements were met. 
