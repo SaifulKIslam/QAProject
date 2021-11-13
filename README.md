@@ -2,8 +2,8 @@
 # Author
 ## Saiful Islam
 
-## Introduction
 <a name="intro"></a>
+## Introduction
 This repositary contains my CRUD application for my QA devops fundamental project.
 
 ## Contents
@@ -50,11 +50,6 @@ The ERD below shows the relationship between the databases.
     <img src="/Documentation/ERD.png" alt="ERD" width="100%" height="100%"/>
     
     
-#### Plan
-
-The inital plan for the ERD was consistent throughout the projects lifecycle and the project was delievered with the ERD shown below. No 
-changes were needed to be made to the database as all functionalty requirements were met. 
-
 <a name="ci"></a>
 ## CI Pipeline
 
@@ -65,19 +60,19 @@ A CI pipeline was involved in the development and deployment of the project, a m
 <a name="use_case"></a>
 ### Project Planning & User Stories 
 
-For the project a tool called Trello is being used as a planning tool to keep track of tasks and update what needed to be done or has been completed.
-Trello is a free and easy to use platform that creates Kanban boards. Below is a screenshot of the Trello board and a link to the Trello board:
+For the project planning tool i used Jira to keep track of tasks and update what needed to be done or has been completed.
+Below is a screenshot of the Jira board.
 
 [Trello Board](https://trello.com/b/siBc2gmV/fundamental-qa-project)
 
 <img src="/Documentation/Trello Board.png" alt="Trello" width="100%" height="100%"/>
 
-### Use Case Overview
+### User Case Overview
 
 <img src="/Documentation/Use case Overview.png" alt="Usecase" width="100%" height="100%"/>
 
 ### Use Stories Overview
-Below are entailed a series of user stories according to the planned uses for the application and their level of requirement according to a MoSCoW (Must, Shoud, Could, Would) scale
+Below are the user stories according to the planned uses for the application and their  requirement according to  MoSCoW (Must, Shoud, Could, Would) scale
 
 |  | User Stories and their MoSCoW |
 | ------ | ------ |
@@ -92,13 +87,14 @@ Below are entailed a series of user stories according to the planned uses for th
 
 <a name="test_"></a>
 ## Testing (Unit Testing)
-Testing of my web app has been done by using Pytest. When running pytest --cov term-missing on the applications directory the test coverage report of was 79%. The tests conducted on my app were to ensure that the user can access or view any of the apps pages. I also tested the functions for adding a series name, adding a review, updating and deleting series. With Pytest I was able to test most functions of my web app and understand what parts of my app that were not tested. 
+Testing was an essential part of development to ensure that the planned uses were delivered and working. Pytest was used to test my application. The test coverage report for my application was 79%. Tests fot individual core functions such as adding a book title, adding a review, updating and deleting books were also carried out with Pytest. As per the coverage report most of the application was tested succefully and i was also able to understand where issues occurred.
+
 <img src="/Documentation/Pytest-Cov.png" alt="ERD" width="100%" height="100%"/>
  
 
 <a name="depl"></a>
 ## Deployment
-The deployment and test stage for the web app were automated using Jenkins, a Continous integration server. Jenkins was installed into the GCP instance by firstly adding a port tcp:8080 to the firewall rules control, creating a deployment server. I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
+Jenkins (a continuouse integration server) was used for the The deployment and also testing for the application. To do this i installed henkins into my GCP instance. I created a firewall rule to add port 8080 to the instance to create a deployment server.  I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
 <img src="/Documentation/Jenkins.png" alt="CI" width="100%" height="100%"/>
 
 I also deployed my web application in a production server using Gunicorn by running the below command. 
@@ -107,7 +103,7 @@ I also deployed my web application in a production server using Gunicorn by runn
 <a name=risks></a>
 ## Risk Assessment
 
-I have thought of a number of risks that my project may face and have categorised them below to analyse the risk, its impact, likelihood and the appropriate response to that risk. The risks can be seen as a combination of technical risks associate with the development side of the project and general risks that will directly or indirectly impact the project
+I carried out a risk assessment in the planning stage to plan for issues that may have occurred. I included various risks that my project may could come accross and have categorised them below to according to their risk, its impact, likelihood anda suitable response. The risks can be seen as a combination of technical risks with the development of the project and general risks that will directly or indirectly impact the project.
 
 [Excel version](https://docs.google.com/spreadsheets/d/1PkbGO7We7VWNwiyrE6rUQE0_KDZOs-1CUOdsQAjmLcc/edit#gid=0)
 <img src="/Documentation/Risk Table.png" alt="CI" width="100%" height="100%"/>
@@ -121,8 +117,8 @@ I have thought of a number of risks that my project may face and have categorise
 * Deployment: Gunicorn
 * CI Server: Jenkins
 * Test Reporting: Pytest
-* VCS: [Git](https://github.com/aaboungab)
-* Project Tracking: [Trello](https://trello.com/b/siBc2gmV/fundamental-qa-project)
+* VSC: 
+* Project Tracking: Jira
 * Live Environment: GCP
 
 
@@ -131,34 +127,35 @@ I have thought of a number of risks that my project may face and have categorise
 
 <a name="home"></a>
 ### Home Page
-Clear home page consists of an Add series button and home button to redirect back to the homepage. 
+Home page consists of a home button
+
 <img src="/Documentation/Home.png" alt="" width="100%" height="100%"/>
 
 
 <a name="addSN"></a>
-### Add Series Name Page
-Clicking on the Add a Series button you will be redirect to the Add series page. 
+### Add a book Page
+Clicking on the Add a book button you will direct you to the to the Add books page. 
 <img src="/Documentation/AddSeries.png" alt="" width="100%" height="100%"/>
 
-#### Home page after Adding series name
+#### Home page after Adding books name
 <img src="/Documentation/AddSeriesHome.png" alt="" width="100%" height="100%"/>
-
+Once you add a book it will be displayed on the homepage.
 
 <a name="revS"></a>
-### Review Series Page
+### Review book Page
 #### Add review
-Add a review by clicking on the Add review button on the home page. That will then redirect you to the add review page:
+To Add a review simply click the Add review button on the home page. That will then direct you to the add review page:
 
 <img src="/Documentation/AddReview.png" alt="" width="100%" height="100%"/>
 
-After adding your review you will be automatically redirected to the Review page where you can view your review and other reviews on the specific series:
+After adding your review you will be automatically directed to the Review page where you can view your reviews and other reviews on the book:
 
 <img src="/Documentation/ReviewPage.png" alt="" width="100%" height="100%"/>
 
 
 <a name="virev"></a>
 ### View Review Page
-You can veiw reviews of each series by clicing  the view review button on the homepage:
+You can view reviews of each book by clicing the view review button under the specific book on the homepage:
 
 <img src="/Documentation/viewreviewbutton.png" alt="" width="100%" height="100%"/>
 
