@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+{% for books in all_books %}
+
+<h4 style="color: #211f1e;
+-webkit-transition: .5s;
+font-family: 'Muli', sans-serif;
+font-size: x-large;
+margin-left: 20px;">{{ books.name }}</h4>
+
+<form method= '' action='{{ url_for('update', idNum=books.id)}}'>
+	<button style= 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">Update</button>
+</form>
+ 
+<form method='' action=' {{ url_for('delete', idNum=books.id)}}'>
+	<button style= 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">Delete</button>
+</form>
+
+<form method= '' action='{{ url_for('addReview',idNum=books.id)}}'>
+	<button style= 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">Add review</button>
+</form>
+
+<form method= '' action='{{ url_for('Reviewpage',idNum=books.id)}}'>
+        <button style= 0 17px 50px 0 rgba(0,0,0,0.19);
+width: 100px;">View reviews</button>
+</form>
+<br>
+
+{% endfor %}
+
+
+{% endblock body_content %}

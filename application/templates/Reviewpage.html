@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+<br>
+{% for review in review_page %}
+<h3 style="font-size:180%;">{{ review.books.name}}</h3>
+<p style="font-size:100%;">Summary: &nbsp;  &nbsp; &nbsp;{{ review.desc }} </p> 
+
+
+
+{% endfor %}
+{% endblock body_content %}
