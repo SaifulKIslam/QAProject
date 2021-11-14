@@ -126,14 +126,14 @@ I carried out a risk assessment in the planning stage to plan for issues that ma
 
 <a name="home"></a>
 ### Home Page
-Home page consists of a home button
+Home page consists of a home button and add book button:
 
 <img src="/images/Homepage.png" alt="" width="100%" height="100%"/>
 
 
 <a name="addSN"></a>
 ### Add a book Page
-Clicking on the Add a book button you will direct you to the to the Add books page. 
+Clicking on the Add a book button you will be directed to the to the Add books page. 
 <img src="/images/Addbookpage.png" alt="" width="100%" height="100%"/>
 
 #### Home page after Adding books name
@@ -143,20 +143,20 @@ Once you add a book it will be displayed on the homepage.
 <a name="revS"></a>
 ### Review book Page
 #### Add review
-To Add a review simply click the Add review button on the home page. That will then direct you to the add review page:
+To Add a review simply click the Add review button on the home page under teh specific book. That will then direct you to the add review page:
 
 <img src="/images/Addreviewpage.png" alt="" width="100%" height="100%"/>
 
 After adding your review you will be automatically directed to the Review page where you can view your reviews and other reviews on the book:
 
-<img src="/images/Reviewpage.png" alt="" width="100%" height="100%"/>
+<img src="/images/Reviewspage.png" alt="" width="100%" height="100%"/>
 
 
 <a name="virev"></a>
 ### View Review Page
 You can view reviews of each book by clicking the view review button under the specific book on the homepage:
 
-<img src="/Documentation/viewreviewbutton.png" alt="" width="100%" height="100%"/>
+<img src="/images/Multiplereviews.png" alt="" width="100%" height="100%"/>
 
 
 <a name="improve"></a>
