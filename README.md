@@ -72,7 +72,7 @@ Below is a screenshot of the Jira board.
 <img src="/Documentation/Use case Overview.png" alt="Usecase" width="100%" height="100%"/>
 
 ### Use Stories Overview
-Below are the user stories according to the planned uses for the application and their  requirement according to  MoSCoW (Must, Shoud, Could, Would) scale
+Below are the user stories according to the intended uses for the application and their MoSCoW (Must, Shoud, Could, Would) prioisting scale
 
 |  | User Stories and their MoSCoW |
 | ------ | ------ |
@@ -80,14 +80,14 @@ Below are the user stories according to the planned uses for the application and
 | MUST | As a user, I want to be able to create reviews on the app |
 | SHOULD | As a user, I want to be able to read reviews on the app |
 | SHOULD | As a user I want to be able to update my reviews on the app |
-| SHOULD | As a user I want to delete my reviews on the app |
+| SHOULD | As a user I want to delete reviews on the app |
 | COULD | As a user, I want to access the web on a mobile devices|
-| Won't Have | As a user, I want to be able to rate other reviews on the app|
+| Won't Have | As a user, I want to be able to create two of the same books tabs on the reviews on the app|
 
 
 <a name="test_"></a>
 ## Testing (Unit Testing)
-Testing was an essential part of development to ensure that the planned uses were delivered and working. Pytest was used to test my application. The test coverage report for my application was 79%. Tests fot individual core functions such as adding a book title, adding a review, updating and deleting books were also carried out with Pytest. As per the coverage report most of the application was tested succefully and i was also able to understand where issues occurred.
+Testing was an essential part of development to ensure that the planned uses were delivered and working. I wrote my tests early on in the developmenty stage to esnure my application functioned to its intended purpose. Pytest was used to test my application. The test coverage report for my application was 79%. Tests fot individual core functions such as adding a book title, adding a review, updating and deleting books were also carried out with Pytest. As per the coverage report most of the application was tested succefully and i was also able to understand where issues occurred.
 
 <img src="/Documentation/Pytest-Cov.png" alt="ERD" width="100%" height="100%"/>
  
