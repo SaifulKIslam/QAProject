@@ -81,9 +81,9 @@ Below are the user stories according to the intended uses for the application an
 
 <a name="test_"></a>
 ## Testing (Unit Testing)
-Testing was an essential part of development to ensure that the planned uses were delivered and working. I wrote my tests early on in the developmenty stage to esnure my application functioned to its intended purpose. Pytest was used to test my application. The test coverage report for my application was 79%. Tests fot individual core functions such as adding a book title, adding a review, updating and deleting books were also carried out with Pytest. As per the coverage report most of the application was tested succefully and i was also able to understand where issues occurred.
+Testing was an essential part of development to ensure that the planned uses were delivered and working. I wrote my tests early on in the development stage to esnure my application functioned to its intended purpose. Pytest was used to test my application. The tests i raised passed 11 out of 11. The test coverage report for my application was 79%. Tests fot individual core functions such as adding a book title, adding a review, updating and deleting books were also carried out with Pytest. As per the coverage report most of the application was tested succefully and i was also able to understand where issues occurred.
 
-<img src="/Documentation/Pytest-Cov.png" alt="ERD" width="100%" height="100%"/>
+<img src="/images/testing.png" alt="ERD" width="100%" height="100%"/>
  
 
 <a name="depl"></a>
