@@ -47,7 +47,7 @@ There will be two databases with a one-to-many realtionship.
 * A Reviews database
 
 The ERD below shows the relationship between the databases.
-    <img src="/documents/ERD.png"/>
+    <img src="/images/ERD.png"/>
     
     
 <a name="ci"></a>
