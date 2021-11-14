@@ -63,7 +63,7 @@ A CI pipeline was involved in the development and deployment of the project, thi
 For the project planning tool i used Jira to keep track of tasks and update what needed to be done or has been completed.
 Below is a screenshot of the Jira board.
 
-<img src="/Images/Jira.png" alt="Trello" width="100%" height="100%"/>
+<img src="/images/Jira.png" alt="Trello" width="100%" height="100%"/>
 
 ### User Stories Overview
 Below are the user stories according to the intended uses for the application and their MoSCoW (Must, Shoud, Could, Would) prioisting scale
@@ -89,7 +89,7 @@ Testing was an essential part of development to ensure that the planned uses wer
 <a name="depl"></a>
 ## Deployment
 Jenkins (a continuouse integration server) was used for the The deployment of the application and can also be used for testing. To do this i installed Jenkins into my GCP instance. I created a firewall rule to add port 8080 to the instance to create a deployment server.  I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
-<img src="/Images/Jenkins.png" alt="CI" width="100%" height="100%"/>
+<img src="/images/Jenkins.png" alt="CI" width="100%" height="100%"/>
 
 I also deployed my web application in a production server using Gunicorn by running the below command. 
 <img src="/Documentation/Gunicorn.png" alt="CI" width="100%" height="100%"/>
