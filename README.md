@@ -20,8 +20,8 @@ This repositary contains my CRUD application for my QA devops fundamental projec
     - [Explanation](#risk-exp)
 - [User Interface Design](#UID)
     - [Page: Home](#home)
-    - [Page: Add Series name](#addbook)
-    - [Page: Review Series](#reviewbook)
+    - [Page: Add Book Name](#addbook)
+    - [Page: Review Book](#reviewbook)
     - [Page: View Review](#viewrev)
 - [Potential Improvements](#improve)
 
