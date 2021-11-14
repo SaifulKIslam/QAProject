@@ -37,7 +37,7 @@ Users will be able to:
 
 <a name="appdes"></a>
 ### Application Design
-The reviws and books data will be stored on an SQL server hosted on Google Cloud Platform (GCP).
+The reviews and books data will be stored on an SQLlite database as it is a small file. This can be deployed on a SQL hosted databse via GCP if more memory is required.
 Users will be able to Create, Read, Update and Delete from the database via the application interface accordingly.
 
 <a name="erd"></a>
@@ -63,15 +63,9 @@ A CI pipeline was involved in the development and deployment of the project, thi
 For the project planning tool i used Jira to keep track of tasks and update what needed to be done or has been completed.
 Below is a screenshot of the Jira board.
 
-[Trello Board](https://trello.com/b/siBc2gmV/fundamental-qa-project)
+<img src="/Images/Jira.png" alt="Trello" width="100%" height="100%"/>
 
-<img src="/Documentation/Trello Board.png" alt="Trello" width="100%" height="100%"/>
-
-### User Case Overview
-
-<img src="/Documentation/Use case Overview.png" alt="Usecase" width="100%" height="100%"/>
-
-### Use Stories Overview
+### User Stories Overview
 Below are the user stories according to the intended uses for the application and their MoSCoW (Must, Shoud, Could, Would) prioisting scale
 
 |  | User Stories and their MoSCoW |
@@ -94,8 +88,8 @@ Testing was an essential part of development to ensure that the planned uses wer
 
 <a name="depl"></a>
 ## Deployment
-Jenkins (a continuouse integration server) was used for the The deployment and also testing for the application. To do this i installed henkins into my GCP instance. I created a firewall rule to add port 8080 to the instance to create a deployment server.  I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
-<img src="/Documentation/Jenkins.png" alt="CI" width="100%" height="100%"/>
+Jenkins (a continuouse integration server) was used for the The deployment of the application and can also be used for testing. To do this i installed Jenkins into my GCP instance. I created a firewall rule to add port 8080 to the instance to create a deployment server.  I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins 
+<img src="/Images/Jenkins.png" alt="CI" width="100%" height="100%"/>
 
 I also deployed my web application in a production server using Gunicorn by running the below command. 
 <img src="/Documentation/Gunicorn.png" alt="CI" width="100%" height="100%"/>
@@ -110,13 +104,13 @@ I carried out a risk assessment in the planning stage to plan for issues that ma
 
 <a name="tech"></a>
 ### Technologies Used
-* Database: GCP SQL Server
+* Database: GCP SQL Server/SQL lite
 * Programming language: Python
 * Framework: Flask
 * Deployment: Gunicorn
 * CI Server: Jenkins
 * Test Reporting: Pytest
-* VSC: 
+* VCS: Github
 * Project Tracking: Jira
 * Live Environment: GCP
 
