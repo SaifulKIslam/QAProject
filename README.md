@@ -29,11 +29,11 @@ This repositary contains my CRUD application for my QA devops fundamental projec
 ## Project Brief
 My project is to build an application where users can review books that they have read. 
 Users will be able to:
-*Create and add new books
-*Delete exiting books
-*Add reviews for books
-*Update existing book titles
-*Update existing reviews
+* Create and add new books
+* Delete exiting books
+* Add reviews for books
+* Update existing book titles
+* Update existing reviews
 
 <a name="appdes"></a>
 ### Application Design
