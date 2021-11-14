@@ -88,7 +88,7 @@ Testing was an essential part of development to ensure that the planned uses wer
 
 <a name="depl"></a>
 ## Deployment
-Jenkins (a continuouse integration server) was used for the The deployment of the application and can also be used for testing. To do this i installed Jenkins into my GCP instance. I created a firewall rule to add port 8080 to the instance to create a deployment server.  I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins. I included the web hook option to trigger a build of the jobclear
+Jenkins (a continuouse integration server) was used for the The deployment of the application and can also be used for testing. To do this i installed Jenkins into my GCP instance. I created a firewall rule to add port 8080 to the instance to create a deployment server.  I then installed Jenkins on the GCP instance terminal as a user, with enhanced User admissions to run sudo commands enabling me to deploy and test my app on the deployment server. Jenkins. I included the web hook option to trigger a build of the job.
 <img src="/images/Jenkins.png" alt="CI" width="100%" height="100%"/>
 
 I also deployed my web application in a production server using Gunicorn using the below command. 
