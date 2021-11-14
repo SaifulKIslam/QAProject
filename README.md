@@ -1,6 +1,4 @@
 # Book Review Application
-# Author
-## Saiful Islam
 
 <a name="intro"></a>
 ## Introduction
