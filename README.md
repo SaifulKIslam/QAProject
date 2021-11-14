@@ -53,7 +53,7 @@ The ERD below shows the relationship between the databases.
 <a name="ci"></a>
 ## CI Pipeline
 
-A CI pipeline was involved in the development and deployment of the project, a mock-up of this can be seen below.
+A CI pipeline was involved in the development and deployment of the project, this can be seen below.
 
 <img src="/Documentation/CI Pipeline.png" alt="CI" width="100%" height="100%"/>
 
@@ -105,8 +105,7 @@ I also deployed my web application in a production server using Gunicorn by runn
 
 I carried out a risk assessment in the planning stage to plan for issues that may have occurred. I included various risks that my project may come accross and have categorised them below to according to a high,medium, low risk rating, its impact, likelihood, likelihood rating and a suitable response. The risks can be seen as a combination of technical risks with the development of the project and general risks that will directly or indirectly impact the project.
 
-[Excel version](https://docs.google.com/spreadsheets/d/1PkbGO7We7VWNwiyrE6rUQE0_KDZOs-1CUOdsQAjmLcc/edit#gid=0)
-<img src="/Documentation/Risk Table.png" alt="CI" width="100%" height="100%"/>
+<img src="/images/RiskAssessment.png" alt="CI" width="100%" height="100%"/>
 
 
 <a name="tech"></a>
