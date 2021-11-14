@@ -1,2 +1,7 @@
 .pytest_cache
 __pycache__
+.coverage
+__pychache__/
+*.db
+.pytest_cache/
+venv/
