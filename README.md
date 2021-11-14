@@ -12,19 +12,20 @@ This repositary contains my CRUD application for my QA devops fundamental projec
 - [Project Brief](#brief)
 - [Application Design](#appdes)
     - [Entity Relationship Diagrams](#erd)
-- [CI Pipeline](#ci)
-- [Project Planning & User Stories](#use_case)
-- [Testing](#test_)
-- [Deployment](#depl)
+    - [CI Pipeline](#ci)
+    - [Project Planning & User Stories](#use_case)
+    - [Testing](#test_)
+    - [Deployment](#depl)
+
 - [Technologies used](#tech)
 - [Risk Assessment](#risks)
     - [Explanation](#risk-exp)
-- [Front end Design](#FE)
+- [User Interface Design](#UID)
     - [Page: Home](#home)
     - [Page: Add Series name](#addSN)
     - [Page: Review Series](#revS)
     - [Page: View Review](#virev)
-- [Future Improvements](#improve)
+- [Potential Improvements](#improve)
 
 <a name="brief"></a>
 ## Project Brief
@@ -46,6 +47,7 @@ Users will be able to Create, Read, Update and Delete from the database via the 
 There will be two databases with a one-to-many realtionship.
 * A Books database
 * A Reviews database
+
 The ERD below shows the relationship between the databases.
     <img src="/Documentation/ERD.png" alt="ERD" width="100%" height="100%"/>
     
@@ -103,7 +105,7 @@ I also deployed my web application in a production server using Gunicorn by runn
 <a name=risks></a>
 ## Risk Assessment
 
-I carried out a risk assessment in the planning stage to plan for issues that may have occurred. I included various risks that my project may could come accross and have categorised them below to according to their risk, its impact, likelihood anda suitable response. The risks can be seen as a combination of technical risks with the development of the project and general risks that will directly or indirectly impact the project.
+I carried out a risk assessment in the planning stage to plan for issues that may have occurred. I included various risks that my project may come accross and have categorised them below to according to a high,medium, low risk rating, its impact, likelihood, likelihood rating and a suitable response. The risks can be seen as a combination of technical risks with the development of the project and general risks that will directly or indirectly impact the project.
 
 [Excel version](https://docs.google.com/spreadsheets/d/1PkbGO7We7VWNwiyrE6rUQE0_KDZOs-1CUOdsQAjmLcc/edit#gid=0)
 <img src="/Documentation/Risk Table.png" alt="CI" width="100%" height="100%"/>
@@ -122,8 +124,8 @@ I carried out a risk assessment in the planning stage to plan for issues that ma
 * Live Environment: GCP
 
 
-<a name="FE"></a>
-## Front End Design
+<a name="UID"></a>
+## User Interface Design
 
 <a name="home"></a>
 ### Home Page
@@ -155,16 +157,24 @@ After adding your review you will be automatically directed to the Review page w
 
 <a name="virev"></a>
 ### View Review Page
-You can view reviews of each book by clicing the view review button under the specific book on the homepage:
+You can view reviews of each book by clicking the view review button under the specific book on the homepage:
 
 <img src="/Documentation/viewreviewbutton.png" alt="" width="100%" height="100%"/>
 
 
 <a name="improve"></a>
-## Improvements for the Future
-Future improvements for the project would mostly be focused on the development stage. As the source code grew for my application it became more difficult to navigate around and due to my lack of knowledge and experince it was hard to keep up. In the future I can: 
+## Potential Improvements 
 
-- Seperate my routes.py file. Each route can be subdivided in their own category where Add review can be in its own file
-- The current state of the app is fairly simple, in the future I would hope to add more functionalities or more complex services to the ones already in place. I would also improve general layout/design of the .html pages by using CSS or Bootstrap
+There are various development improvements that can be made. The application is fairly simple and my focus was on delivering a finctional app rather than delivering on further ideas which i coudl have included.
+
+- I would improve the interface fir users; making it more user freindly by formatting. such as text font, colour size, background etc.
+
+- I would also add further functionalties such as. Being able to delete individual reviews.
+
+- Would create a seperate homepage and a seperate page for viewing all reviews; as currently my hompeage changes when reviews are added. 
+
+- I would also remove the homepage button from my homepage.
+
 - Use of integrated testing in the future as some of the services cannot currently be tested or must be tested when run as a Flask app (without Docker/Jenkins) as this would make the app more stable.
+
 - Make my web app Mobile friendly, since most websites today are accessed over mobile
